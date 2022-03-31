@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../multimedia/logo_ico.ico" type="image/x-icon">
+    <title>TodoGamer</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <!-- logo y lista navegación -->
+    <header class="header">
+        <a href="../index.html"><img src="../multimedia/logo_full.png" alt="Logo TodoGamer" class="headerImg"></a>
+        <nav class="headerNav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="pc.html">PC</a></li>
+                <li><a href="consolas.html">Consolas</a></li>
+                <li><a href="ubicacion.html">Ubicación</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- fin logo y lista navegación -->
+
+    <div class="container">
+        <section class="news">
+            <article>
+                <a href="../pages/pc.html"><img src="../multimedia/corsair_backtoschool.jpg" alt="novedades"></a>
+            </article>
+            <p>CONTACTO</p>
+            <!-- formulario de contacto -->
+            <article class="contacto">
+                <form class="contactoForm">
+                    <div>
+                        <label for="nombre">Nombre: </label>
+                        <input type="text" placeholder="Ingrese su Nombre" name="nombre">
+                    </div>
+                    <div>
+                        <label for="edad">Edad: </label>
+                        <input type="number" placeholder="Edad">
+                    </div>
+                    <div>Localidad?
+                        <select name="provincia" id="provincia">
+                            <option value="nqn">Neuquén</option>
+                            <option value="plo">Plottier</option>
+                            <option value="cen">Centenario</option>
+                            <option value="ane">Añelo</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="mail"> Mail: </label>
+                        <input type="text" placeholder="Inrege su Mail" name="mail">
+                    </div>
+                    <div>
+
+                    </div>
+                    <div>
+                        <label for="Comentarios"> Mensaje:
+                            <!-- cómo alinear Mensaje con cuadro de texto???-->
+                            <textarea placeholder="Dejanos tus comentarios" cols="30" rows="10"></textarea>
+                        </label>
+                    </div>
+                    <div>
+                        Deseas recibir información sobre ofertas y novedades nuestras?
+                        <input type="checkbox" name="acepta" value="1">
+                    </div>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Cancelar">
+                </form>
+            </article>
+        </section>
+    </div>
+
+    <!-- fin formulario de contacto -->
+    <!-- inicio footer -->
+
+    <footer class="footer">
+        <div>
+            <p>Si tenés sugerencias o comentarios</p>
+            <div><a href="../pages/contacto.html">CONTACTANOS</a></div>
+            <img src="../multimedia/logo_small.png" alt="Logo TodoGamer" class="footerImg">
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,179 @@
+/* General */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: segoeui,Microsoft JhengHei,sans-serif;
+}
+html{ 
+    font-size: 62.5%;
+}
+
+/* Fin General */
+
+/* Header */
+
+.header {
+    height: 90px;
+    width: 100%;
+    background-color: black;
+    position: sticky;
+    top: 0%;
+    text-align: center;
+}
+
+.headerImg{
+    position: relative;
+    right: 500px;
+    top: 10px;
+    padding: 0px;
+    width: 200px;
+}
+
+.headerNav {
+    position: relative;
+    bottom: 37px;
+}
+.headerNav ul li {
+    display: inline-block;
+    position: relative;
+    padding: 0px 50px;
+}
+
+.headerNav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+}
+.headerNav ul li a:hover {
+    color: red;
+}
+/* Fin Header */
+
+/* Footer */
+.footer {
+    height: 130px;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.footer div div a {
+    text-decoration: none;
+}
+
+.footerImg {
+    width: 120px;
+}
+
+.footer div div a:hover {
+    color: red;
+} 
+/* Fin Footer */
+
+/* Container */
+
+.container {
+    min-height: calc(100vh - 90px - 130px);
+}
+
+/* Container */
+/* Section Index -- También usado en las demás páginas */
+
+.news {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.news article {
+    background-color: rgb(212, 212, 212);
+}
+
+.newsImg {
+    height: 415px;
+    background-color: grey;
+}
+
+.newInc {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.newInc div {
+    display: inline-block;
+    margin: 0px 80px;
+    border-style: inset;
+}
+
+.newInc div img {
+    width: 400px;
+}
+/* Fin Section Index */
+
+/* PC - Consolas */
+
+.filterList {
+    display: inline-block;
+    color: black;
+    position: relative;
+    width: 200px;
+    right: 50px;
+    bottom: 500px;
+}
+
+.filterList ul li {
+    text-align: left;
+    padding-left: 50px;
+    padding-top: 5px;
+    list-style: none;
+}
+
+.filterList ul li a {
+    text-decoration: none;
+    font-size: 1,5rem;
+    color: rgb(54, 54, 54);
+}
+.filterList ul li a:hover {
+    color: red;
+}
+
+.elementList {
+    display: inline-block;
+    z-index: -1;
+    position: relative;
+}
+
+.elementList table tr td img {
+    width: 300px;
+}
+/* PC - Consolas */
+
+/*  Contacto */
+
+.contacto {
+    padding: 5px 0px;
+}
+
+.contactoForm {
+    font-size: 1.5rem;
+}
+.contactoForm div {
+    margin-top: 1rem;
+}
+
+.contactoForm input {
+    text-align: center;
+    width: 200px;
+}
+
+.contactoForm select {
+    text-align: center;
+    width: 200px;
+}
+/* Fin Contacto */
