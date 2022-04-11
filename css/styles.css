@@ -113,7 +113,7 @@ html{
 }
 
 .newsInc div img {
-    width: 400px;
+    width: 300px;
     border-style: inset;
 }
 /* Fin MAIN */
@@ -476,6 +476,20 @@ td {
     }
 }   
 
+.newsInc div img {
+    transition: all 1.5s;
+}
+.newsInc div img:hover {
+    transform: scale(1.2);
+    border-color: rgb(255, 0, 0);
+}
+
+.contactoForm input {
+    transition: all 1s;
+}
+.contactoForm input:focus {
+    transform: scale(1.1);
+}
 /* Fin MOBILE */
 /* Fin PC - CONSOLAS */
 
