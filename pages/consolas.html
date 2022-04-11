@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,14 +8,17 @@
     <link rel="shortcut icon" href="../multimedia/logo_ico.ico" type="image/x-icon">
     <title>TodoGamer</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://kit.fontawesome.com/31dab08d1f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <!-- logo y lista navegación -->
-    <header class="header">
-        <a href="../index.html"><img src="../multimedia/logo_full.png" alt="Logo TodoGamer" class="headerImg"></a>
-        <nav class="headerNav">
-            <ul>
+    <div class="gridContainerPc">
+        <!-- logo y lista navegación -->
+        <header class="header">
+            <a href="../index.html"><img src="../multimedia/logo_full.png" alt="Logo TodoGamer" class="headerImg"></a>
+        </header>
+        <nav class="mainNav">
+            <ul class="headerNav">
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="pc.html">PC</a></li>
                 <li><a href="consolas.html">Consolas</a></li>
@@ -22,59 +26,56 @@
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
-    </header>
-    <!-- fin logo y lista navegación -->
-    <!-- sección consolas -->
-    <div class="container">
-        <section class="news">
-            <article>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/oRru5G3x3qg"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-            </article>
-            <div class="list">
-                <nav class="filterList"> Consolas
-                    <ul>
-                        <li><a href="consolas.html">PS5</a></li>
-                        <li><a href="consolas.html">PS4</a></li>
-                        <li><a href="consolas.html">XBOX Series X</a></li>
-                        <li><a href="consolas.html">XBOX Series S</a></li>
-                        <li><a href="consolas.html">Juegos</a></li>
-                        <li><a href="consolas.html">Accesorios</a></li>
-                    </ul>
-                </nav>
-                <div class="elementList">
-                    <table border="1px">
-                        <tr>
-                            <td><img src="../multimedia/Consolas/ps5.jpeg" alt="img not found"></td>
-                            <td><img src="" alt="img not found"></td>
-                            <td><img src="" alt="img not found"></td>
-                        </tr>
-                        <tr>
-                            <td><img src="" alt="img not found"></td>
-                            <td><img src="../multimedia/Consolas/xbox_S.jpeg" alt="img not found"></td>
-                            <td><img src="../multimedia/Consolas/xbox_X.jpg" alt="img not found"></td>
-                        </tr>
-                        <tr>
-                            <td><img src="../multimedia/Consolas/joystick_ps5.jpg" alt="img not found"></td>
-                            <td><img src="" alt="img not found"></td>
-                            <td><img src="" alt="img not found"></td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-        </section>
-    </div>
-    <!-- fin sección consolas -->
-    <!-- inicio footer -->
+        <!-- fin logo y lista navegación -->
 
-    <footer class="footer">
-        <div>
-            <p>Si tenés sugerencias o comentarios</p>
-            <div><a href="../pages/contacto.html">CONTACTANOS</a></div>
-            <img src="../multimedia/logo_small.png" alt="Logo TodoGamer" class="footerImg">
+        <!-- sección consolas -->
+        <section class="news">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/oRru5G3x3qg" title="YouTube video player"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen class="video"></iframe>
+        </section>
+        <nav class="productsFilter">
+            <p>Consolas</p>
+            <ul>
+                <li><a href="consolas.html">PS5</a></li>
+                <li><a href="consolas.html">PS4</a></li>
+                <li><a href="consolas.html">XBOX Series X</a></li>
+                <li><a href="consolas.html">XBOX Series S</a></li>
+                <li><a href="consolas.html">Juegos</a></li>
+                <li><a href="consolas.html">Accesorios</a></li>
+            </ul>
+        </nav>
+        <div class="products">
+            <div>
+                <img src="../multimedia/Consolas/ps5.jpeg" alt="img not found">
+                <img src="" alt="img not found">
+                <img src="" alt="img not found">
+            </div>
+            <div>
+                <img src="" alt="img not found">
+                <img src="../multimedia/Consolas/xbox_S.jpeg" alt="img not found">
+                <img src="../multimedia/Consolas/xbox_X.jpg" alt="img not found">
+            </div>
+            <div>
+                <img src="../multimedia/Consolas/joystick_ps5.jpg" alt="img not found">
+                <img src="" alt="img not found">
+                <img src="" alt="img not found">
+            </div>
         </div>
-    </footer>
+        <!-- fin sección consolas -->
+        
+        <!-- inicio footer -->
+        <footer class="footer">
+            <div>
+                <p>Si tenés sugerencias o comentarios</p>
+                <div><a href="contacto.html">CONTACTANOS</a></div>
+                <p>
+                    <a href="https://www.instagram.com"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                    <img src="../multimedia/logo_small.png" alt="Logo TodoGamer" class="footerImg">
+                    <a href="https://www.whatsapp.com"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
+                </p>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>

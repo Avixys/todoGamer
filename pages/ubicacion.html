@@ -8,14 +8,17 @@
     <link rel="shortcut icon" href="../multimedia/logo_ico.ico" type="image/x-icon">
     <title>TodoGamer</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://kit.fontawesome.com/31dab08d1f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <!-- logo y lista navegación -->
-    <header class="header">
-        <a href="../index.html"><img src="../multimedia/logo_full.png" alt="Logo TodoGamer" class="headerImg"></a>
-        <nav class="headerNav">
-            <ul>
+    <div class="gridContainer">
+        <!-- logo y lista navegación -->
+        <header class="header">
+            <a href="../index.html"><img src="../multimedia/logo_full.png" alt="Logo TodoGamer" class="headerImg"></a>
+        </header>
+        <nav class="mainNav">
+            <ul class="headerNav">
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="pc.html">PC</a></li>
                 <li><a href="consolas.html">Consolas</a></li>
@@ -23,31 +26,34 @@
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
-    </header>
-    <!-- fin logo y lista navegación -->
-    <!-- sección ubicación -->
-    <div class="container">
+        <!-- fin logo y lista navegación -->
+    
+        <!-- sección ubicación -->
         <section class="news">
-            <article>
-                <a href="../pages/pc.html"><img src="../multimedia/corsair_backtoschool.jpg" alt="novedades" class="newsImg"></a>
-            </article>
+            <a href="../pages/pc.html"><img src="../multimedia/corsair_backtoschool.jpg" alt="novedades"class="newsImg"></a>
+        </section>
+        <section class="newsInc">
             <p>Nuestro Local</p>
-            <article>
+            <div>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3102.9704734645175!2d-68.04795846244038!3d-38.94750291593467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a317d67f45d73%3A0x29acc17cedb120d6!2sIslas%20Malvinas%20846%2C%20Q8300%20Neuqu%C3%A9n!5e0!3m2!1ses!2sar!4v1647108568070!5m2!1ses!2sar"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </article>
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="ubicacion"></iframe>
+            </div>
         </section>
+        <!-- fin sección ubicación -->
+    
+        <!-- inicio footer -->
+        <footer class="footer">
+            <div>
+                <p>Si tenés sugerencias o comentarios</p>
+                <div><a href="contacto.html">CONTACTANOS</a></div>
+                <p>
+                    <a href="https://www.instagram.com"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                    <img src="../multimedia/logo_small.png" alt="Logo TodoGamer" class="footerImg">
+                    <a href="https://www.whatsapp.com"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
+                </p>
+            </div>
+        </footer>
     </div>
-    <!-- fin sección ubicación -->
-    <!-- inicio footer -->
-
-    <footer class="footer">
-        <div>
-            <p>Si tenés sugerencias o comentarios</p>
-            <div><a href="../pages/contacto.html">CONTACTANOS</a></div>
-            <img src="../multimedia/logo_small.png" alt="Logo TodoGamer" class="footerImg">
-        </div>
-    </footer>
 </body>
 </html>

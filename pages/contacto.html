@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,13 +8,16 @@
     <link rel="shortcut icon" href="../multimedia/logo_ico.ico" type="image/x-icon">
     <title>TodoGamer</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://kit.fontawesome.com/31dab08d1f.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- logo y lista navegación -->
-    <header class="header">
-        <a href="../index.html"><img src="../multimedia/logo_full.png" alt="Logo TodoGamer" class="headerImg"></a>
-        <nav class="headerNav">
-            <ul>
+    <div class="gridContainer">
+        <!-- logo y lista navegación -->
+        <header class="header">
+            <a href="../index.html"><img src="../multimedia/logo_full.png" alt="Logo TodoGamer" class="headerImg"></a>
+        </header>
+        <nav class="mainNav">
+            <ul class="headerNav">
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="pc.html">PC</a></li>
                 <li><a href="consolas.html">Consolas</a></li>
@@ -21,17 +25,15 @@
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
-    </header>
-    <!-- fin logo y lista navegación -->
-
-    <div class="container">
+        <!-- fin logo y lista navegación -->
+    
+        <!-- formulario de contacto -->
         <section class="news">
-            <article>
-                <a href="../pages/pc.html"><img src="../multimedia/corsair_backtoschool.jpg" alt="novedades"></a>
-            </article>
+            <a href="../pages/pc.html"><img src="../multimedia/corsair_backtoschool.jpg" alt="novedades" class="newsImg"></a>
+        </section>
+        <section class="formulario">
             <p>CONTACTO</p>
-            <!-- formulario de contacto -->
-            <article class="contacto">
+            <div class="contacto">
                 <form class="contactoForm">
                     <div>
                         <label for="nombre">Nombre: </label>
@@ -54,9 +56,6 @@
                         <input type="text" placeholder="Inrege su Mail" name="mail">
                     </div>
                     <div>
-
-                    </div>
-                    <div>
                         <label for="Comentarios"> Mensaje:
                             <!-- cómo alinear Mensaje con cuadro de texto???-->
                             <textarea placeholder="Dejanos tus comentarios" cols="30" rows="10"></textarea>
@@ -66,22 +65,27 @@
                         Deseas recibir información sobre ofertas y novedades nuestras?
                         <input type="checkbox" name="acepta" value="1">
                     </div>
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Cancelar">
+                    <div class="send">
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Cancelar">
+                    </div>
                 </form>
-            </article>
+            </div>
         </section>
+        <!-- fin formulario de contacto -->
+
+        <!-- inicio footer -->
+        <footer class="footer">
+            <div>
+                <p>Si tenés sugerencias o comentarios</p>
+                <div><a href="contacto.html">CONTACTANOS</a></div>
+                <p>
+                    <a href="https://www.instagram.com"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                    <img src="../multimedia/logo_small.png" alt="Logo TodoGamer" class="footerImg">
+                    <a href="https://www.whatsapp.com"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
+                </p>
+            </div>
+        </footer>
     </div>
-
-    <!-- fin formulario de contacto -->
-    <!-- inicio footer -->
-
-    <footer class="footer">
-        <div>
-            <p>Si tenés sugerencias o comentarios</p>
-            <div><a href="../pages/contacto.html">CONTACTANOS</a></div>
-            <img src="../multimedia/logo_small.png" alt="Logo TodoGamer" class="footerImg">
-        </div>
-    </footer>
-</body>
+</body>    
 </html>
