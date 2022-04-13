@@ -15,7 +15,7 @@ html{
 /* Fin General */
 
 /* GRID INDEX */
-.gridContainer {
+/* .gridContainer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 0.7fr auto auto 0.1fr;
@@ -47,19 +47,43 @@ html{
 
 .footer {
     grid-area: footer;
-}
+} */
 /* Fin GRID INDEX */
 
 /* HEADER */
-.header {
+/* .header a {
+    background-color: black;
     display: flex;
     justify-content: flex-end;
+} */
+.header {
+    background-color: black;
 }
+
+.headerNav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-link {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.nav-link:hover {
+    color: red;
+}
+
+.navbar-dark .navbar-toggler {
+    color: rgb(251, 251, 251);
+    border-color: rgb(255, 255, 255);
+}
+
 .headerImg {
     width: 200px;
 }
 
-.headerNav{
+/* .headerNav{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -70,7 +94,7 @@ html{
 }
 
 .headerNav li {
-    padding: 0 50px;
+    padding: 0 30px;
     list-style-type: none;
 }
 
@@ -81,7 +105,7 @@ html{
 
 .headerNav li a:hover {
     color: red;
-}
+}*/
 /* Fin HEADER */
 
 /* MAIN */
@@ -92,6 +116,11 @@ html{
 }
 
 .news a {
+    display: flex;
+    justify-content: center;
+}
+
+.news div {
     display: flex;
     justify-content: center;
 }
@@ -115,6 +144,7 @@ html{
 .newsInc div img {
     width: 300px;
     border-style: inset;
+    border-color: black;
 }
 /* Fin MAIN */
 
@@ -143,11 +173,11 @@ html{
 
 .footer div p {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .footer div p a {
-    margin-top: 20px;
+    margin: 20px 50px 0px 50px;
 }
 
 .footerImg {
@@ -157,42 +187,59 @@ html{
 
 /* Formulario Contacto */
 
-.formulario {
+/* .formulario {
     grid-area: section2;
     font-size: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+} */
 
+.formulario {
+    font-size: 2rem;
+    text-align: center;
+}
 .contactoForm {
+    width: 400px;
+    margin: 0 auto;
+    background-color: rgb(212, 212, 212);;
+    border-radius: 3px;
     font-size: 1.5rem;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
+}
+
+.field {
+    outline: none;
+    border: solid 1px;
+    border-radius: 3px;
+    width: 370px;
 }
 
 .contactoForm div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 5px 0px;
 }
 
 .send {
-    display: flex;
     flex-direction: row;
 }
 
 .send input {
-    margin-right: 20px;
     padding: 0px 10px;
+    margin-bottom: 10px;
 }
 
 /* Fin Formulario Contacto */
 
 /* VISTA TABLET */
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 992px) {
     /* GRID INDEX */
-    .gridContainer {
+    /* .gridContainer {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 0.7fr auto auto 0.1fr;
@@ -223,15 +270,20 @@ html{
     
     .footer {
         grid-area: footer;
+    } */
+
+    .video {
+        width: 280px;
+        height: 157px;
     }
 }
 /* Fin TABLET */
 
 /* MOBILE */
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 768px){
     /* GRID INDEX */
-    .gridContainer {
+    /* .gridContainer {
         display: grid;
         grid-template-rows: 0.1fr 0.1fr auto auto 0.1fr;
         grid-template-columns: auto;
@@ -264,10 +316,11 @@ html{
     
     .footer {
         grid-area: footer;
-    }
+
+    }*/
     /* Fin GRID */
     /* HEADER */
-    .header {
+    /* .header {
         justify-content: center;
     }
 
@@ -279,7 +332,7 @@ html{
 
     .headerNav li {
         padding: 1px 5px;
-    }
+    } */
 
     /* Fin HEADER */
 
@@ -295,6 +348,14 @@ html{
     
     .newsInc div img {
         width: 200px;
+    }
+
+    .contactoForm {
+        width: 300px;
+    }
+
+    .field {
+        width: 270px;
     }
 
     .ubicacion {
@@ -326,7 +387,7 @@ html{
 
 /* PC - CONSOLAS */
 
-.gridContainerPc {
+/* .gridContainerPc {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 0.7fr auto auto 0.5fr;
@@ -344,6 +405,11 @@ html{
 
 .products {
     grid-area: section2;
+} */
+
+.mainSection {
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 .productsFilter {
@@ -353,7 +419,7 @@ html{
     flex-direction: column;
     align-items: flex-end;
     margin-top: 20px;
-    margin-right: 50px;
+    margin-right: 10px;
 }
 .productsFilter p {
     margin-right: 40px;
@@ -386,21 +452,19 @@ html{
     justify-content: center;
     flex-wrap: wrap;
 }
+
 .products div img {
-    border-style: inset;
+    border: solid 3px;
+    margin: 1px;
     width: 300px;
     height: 250px;
 }
 
-td {
-    border-style: inset;
-}
-
 /* VISTA TABLET */
 
-@media screen and (max-width:1023px) {
+@media screen and (max-width: 992px) {
     /* GRID PC-CONSOLAS */
-    .gridContainerPc {
+    /* .gridContainerPc {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 0.7fr auto auto 0.1fr;
@@ -417,10 +481,31 @@ td {
     
     .products {
         grid-area: section2;
+    } */
+
+    .mainSection {
+        flex-direction: column;
+    }
+    .productsFilter {
+        align-items: center;
+    }
+    
+    .productsFilter p {
+        margin: 0;
+    }
+    .productsFilter ul {
+        display: flex;
     }
 
+    .productsFilter ul li {
+        padding: 0 5px;
+    }
+    .products {
+        justify-content: center;
+        margin: 0;
+    }
+    
     .products div {
-        display: flex;
         flex-direction: column;
     }
 }
@@ -428,9 +513,9 @@ td {
 
 /* VISTA MOBILE */
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 768px){
     /* GRID INDEX */
-    .gridContainerPc {
+    /* .gridContainerPc {
         display: grid;
         grid-template-rows: 0.1fr 0.1fr auto auto auto 0.1fr;
         grid-template-columns: auto;
@@ -442,11 +527,7 @@ td {
             "section2"
             "footer";
         min-height: 100vh;
-    }
-
-    .header {
-        justify-content: center;
-    }
+    } */
 
     .productsFilter {
         flex-direction: column;
@@ -476,6 +557,11 @@ td {
     }
 }   
 
+/* Fin MOBILE */
+/* Fin PC - CONSOLAS */
+
+/* Animaciones */
+
 .newsInc div img {
     transition: all 1.5s;
 }
@@ -484,175 +570,12 @@ td {
     border-color: rgb(255, 0, 0);
 }
 
-.contactoForm input {
+.field {
     transition: all 1s;
 }
 .contactoForm input:focus {
     transform: scale(1.1);
 }
-/* Fin MOBILE */
-/* Fin PC - CONSOLAS */
 
+/* Fin Animaciones */
 
-/* Header */
-
-/* .header {
-    height: 90px;
-    width: 100%;
-    background-color: black;
-    position: sticky;
-    top: 0%;
-    text-align: center;
-}
-
-.headerImg{
-    position: relative;
-    right: 500px;
-    top: 10px;
-    padding: 0px;
-    width: 200px;
-}
-
-.headerNav {
-    position: relative;
-    bottom: 37px;
-}
-.headerNav ul li {
-    display: inline-block;
-    position: relative;
-    padding: 0px 50px;
-}
-
-.headerNav ul li a{
-    color: white;
-    text-decoration: none;
-    font-size: 2rem;
-}
-.headerNav ul li a:hover {
-    color: red;
-} */
-/* Fin Header */
-
-/* Footer */
-/* .footer {
-    height: 130px;
-    width: 100%;
-    background-color: black;
-    text-align: center;
-    color: white;
-    font-size: 1.5rem;
-}
-
-.footer div div a {
-    text-decoration: none;
-}
-
-.footerImg {
-    width: 120px;
-}
-
-.footer div div a:hover {
-    color: red;
-}  */
-/* Fin Footer */
-
-/* Container */
-
-/* .container {
-    min-height: calc(100vh - 90px - 130px);
-} */
-
-/* Container */
-/* Section Index -- También usado en las demás páginas */
-
-/* .news {
-    text-align: center;
-    font-size: 2rem;
-}
-
-.news article {
-    background-color: rgb(212, 212, 212);
-}
-
-.newsImg {
-    height: 415px;
-    background-color: grey;
-}
-
-.newInc {
-    font-size: 3rem;
-    text-align: center;
-}
-
-.newInc div {
-    display: inline-block;
-    margin: 0px 80px;
-    border-style: inset;
-}
-
-.newInc div img {
-    width: 400px;
-} */
-/* Fin Section Index */
-
-/* PC - Consolas */
-
-/* .filterList {
-    display: inline-block;
-    color: black;
-    position: relative;
-    width: 200px;
-    right: 50px;
-    bottom: 500px;
-}
-
-.filterList ul li {
-    text-align: left;
-    padding-left: 50px;
-    padding-top: 5px;
-    list-style: none;
-}
-
-.filterList ul li a {
-    text-decoration: none;
-    font-size: 1,5rem;
-    color: rgb(54, 54, 54);
-}
-.filterList ul li a:hover {
-    color: red;
-}
-
-.elementList {
-    display: inline-block;
-    z-index: -1;
-    position: relative;
-}
-
-.elementList table tr td img {
-    width: 300px;
-} */
-/* PC - Consolas */
-
-/*  Contacto */
-
-/* .contacto {
-    padding: 5px 0px;
-}
-
-.contactoForm {
-    font-size: 1.5rem;
-}
-.contactoForm div {
-    margin-top: 1rem;
-}
-
-.contactoForm input {
-    text-align: center;
-    width: 200px;
-}
-
-.contactoForm select {
-    text-align: center;
-    width: 200px;
-} */
-/* Fin Contacto */
