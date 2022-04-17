@@ -351,6 +351,7 @@ html{
 
     .contactoForm {
         width: 300px;
+        align-items: center;
     }
 
     .field {
@@ -367,14 +368,6 @@ html{
         height: 157px;
     }
 /* Fin MAIN */
-
-/* Contacto */
-
-.contactoForm {
-    align-items: center;
-}
-
-/* Fin Contacto*/
 
 /* FOOTER */
     .footer {

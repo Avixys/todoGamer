@@ -1,0 +1,32 @@
+.footer{
+    background-color: black;
+    font-size: 1.5rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    div {
+        text-align: center;
+        text-decoration: none;
+        a {
+            text-decoration: none;
+            color: white;
+            &:hover {
+                color: red;
+            }
+        }
+        p {
+            display: flex;
+            justify-content: center;
+            a {
+                margin: 20px 50px 0px 50px;
+            }
+        }
+    }
+    @media screen and (max-width: 768px) {
+        font-size: 1.25rem;
+    }
+}
+
+.footerImg {
+    width: 100px;
+}
