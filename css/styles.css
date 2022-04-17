@@ -66,11 +66,10 @@ html{
 }
 
 .nav-link {
-    color: white;
     font-size: 1.5rem;
 }
 
-.nav-link:hover {
+.navbar-dark .navbar-nav .nav-link.active:hover {
     color: red;
 }
 
@@ -126,7 +125,7 @@ html{
 }
 
 .newsImg {
-    width: 100%;
+    width: 80%;
 }
 
 .newsInc {
