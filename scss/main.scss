@@ -5,17 +5,24 @@
 @import "footer";
 @import "consolaspc";
 
+$estiloForm: (
+    color: rgb(212, 212, 212),
+    ancho: 400px,
+    tamañoFuente: 1.5rem,
+    borderRadius: 3px
+);
 /*form contacto*/
 .formulario {
+    margin-bottom: 50px;
     font-size: 2rem;
     text-align: center;
 }
 .contactoForm {
-    width: 400px;
     margin: 0 auto;
-    background-color: rgb(212, 212, 212);;
-    border-radius: 3px;
-    font-size: 1.5rem;
+    width: map-get($estiloForm, ancho);
+    background-color: map-get($estiloForm, color);
+    border-radius: map-get($estiloForm, borderRadius);
+    font-size: map-get($estiloForm, tamañoFuente);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,12 +56,26 @@
 }
 
 .send {
-    flex-direction: row;
-    input {
+    flex-direction: row !important;
+}
+
+.botonEnviar {
         padding: 0px 10px;
-        margin-bottom: 10px;
+        margin: 0 10px 10px 10px;
+        width: 100px;
+        border-radius: 5px;
+        &:hover {
+            background-color: rgb(0, 128, 128);
+        }
+}
+
+.botonCancelar {
+    @extend .botonEnviar;
+    &:hover {
+        background-color: rgb(220, 80, 70);
     }
 }
+
 /*fin form contacto*/
 
 @media screen and (max-width: 768px) {

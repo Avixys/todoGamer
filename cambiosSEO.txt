@@ -1,0 +1,43 @@
+
+<--INDEX-->
+Agregué meta description (158 caracteres): "En Todo Gamer nos especializamos en la venta de hardware de última generación. Notebook, PC gamer, monitores, encontrá todo lo que necesites en nuestro sitio."
+
+Agregué meta keywords: "PC, consolas, hardware, monitores, placa madre, GPU, memorias, discos rigidos, ssd, juegos, joysticks"
+
+Cambié title: "Todo Gamer | HOME"
+
+
+<--PC-->
+Agregué meta description (117 caracteres): "En Todo Gamer encontrás todo el hardware de última generación para tu PC, las mejores marcas y notebooks del mercado."
+
+Agregué meta keywords: "PC, hardware, monitores, placa madre, GPU, memorias, discos rigidos, ssd, juegos, joysticks"
+
+Cambié title: "Todo Gamer | PC"
+
+
+<--CONSOLAS-->
+Agregué meta description (124 caracteres): "En Todo Gamer tenemos todas las consolas de última generación y los mejores juegos. Encontrá todo para tu Playstation o XBOX"
+
+Agregué meta keywords: "consolas, joystick, juegos PS5, juegos XBOX, monitores"
+
+Cambié title: "Todo Gamer | CONSOLAS"
+
+
+<--CONTACTO-->
+Agregué meta description (igual index)
+
+Agregué meta keywords (igual index)
+
+Cambié title: "Todo Gamer | CONTACTO"
+
+
+<--UBICACION-->
+Agregué meta description (131 caracteres): "En Todo Gamer tenemos todos para tu PC Gamer y consolas de última generación. Vení a nuestro Local y obtené el mejor asesoramiento."
+
+Agregué meta keywords (igual index)
+
+Cambié title: "Todo Gamer | UBICACION"
+
+
+
+

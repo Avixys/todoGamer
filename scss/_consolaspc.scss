@@ -1,6 +1,10 @@
+@mixin wrap($flex, $wrap) {
+    display: $flex;
+    flex-wrap: $wrap;
+}
+
 .mainSection {
-    display: flex;
-    flex-wrap: nowrap;
+    @include wrap(flex, nowrap);
     @media screen and (max-width: 992px) {
         flex-direction: column;
     }
@@ -62,8 +66,7 @@
 }
 
 .products {
-    display: flex;
-    flex-wrap: wrap;
+    @include wrap(flex, wrap);
     justify-content: flex-start;
     margin: 20px 0px;
     div {

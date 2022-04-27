@@ -45,6 +45,7 @@ html {
   width: 80%; }
 
 .newsInc {
+  margin-bottom: 50px;
   text-align: center;
   font-size: 3rem; }
   .newsInc div {
@@ -173,12 +174,13 @@ html {
 
 /*form contacto*/
 .formulario {
+  margin-bottom: 50px;
   font-size: 2rem;
   text-align: center; }
 
 .contactoForm {
-  width: 400px;
   margin: 0 auto;
+  width: 400px;
   background-color: #d4d4d4;
   border-radius: 3px;
   font-size: 1.5rem;
@@ -209,10 +211,18 @@ html {
       width: 270px; } }
 
 .send {
-  flex-direction: row; }
-  .send input {
-    padding: 0px 10px;
-    margin-bottom: 10px; }
+  flex-direction: row !important; }
+
+.botonEnviar, .botonCancelar {
+  padding: 0px 10px;
+  margin: 0 10px 10px 10px;
+  width: 100px;
+  border-radius: 5px; }
+  .botonEnviar:hover, .botonCancelar:hover {
+    background-color: teal; }
+
+.botonCancelar:hover {
+  background-color: #dc5046; }
 
 /*fin form contacto*/
 @media screen and (max-width: 768px) {
