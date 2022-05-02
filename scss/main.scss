@@ -11,6 +11,15 @@ $estiloForm: (
     tamañoFuente: 1.5rem,
     borderRadius: 3px
 );
+
+.carousel-inner {
+    background-color: rgb(212, 212, 212);
+}
+
+.d-block {
+    margin: 0  auto !important;
+}
+
 /*form contacto*/
 .formulario {
     margin-bottom: 50px;

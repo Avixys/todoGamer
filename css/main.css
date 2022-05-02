@@ -12,10 +12,11 @@ html {
 
 .header {
   background-color: black; }
-
-.headerNav {
-  display: flex;
-  justify-content: center; }
+  .header nav div div {
+    display: flex;
+    justify-content: flex-end; }
+    .header nav div div ul {
+      margin-right: 0 !important; }
 
 .nav-link {
   font-size: 1.5rem; }
@@ -28,7 +29,7 @@ html {
   border-color: white; }
 
 .headerImg {
-  width: 200px; }
+  width: 250px; }
 
 .news {
   background-color: #d4d4d4;
@@ -52,15 +53,15 @@ html {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 0 50px; }
+    margin-top: 3rem; }
     .newsInc div img {
       width: 300px;
       border-style: inset;
       border-color: black;
       /*animacion*/
-      transition: all 1.5s; }
+      transition: all 0.75s; }
       .newsInc div img:hover {
-        transform: scale(1.2);
+        transform: scale(1.1);
         border-color: red; }
   @media screen and (max-width: 768px) {
     .newsInc {
@@ -77,24 +78,30 @@ html {
   display: flex;
   justify-content: center; }
   .footer div {
+    display: flex;
+    flex-direction: column;
     text-align: center;
     text-decoration: none; }
+    .footer div p {
+      margin-bottom: 5px; }
     .footer div a {
       text-decoration: none;
       color: white; }
       .footer div a:hover {
         color: red; }
-    .footer div p {
+    .footer div div {
       display: flex;
+      flex-direction: row;
       justify-content: center; }
-      .footer div p a {
-        margin: 20px 50px 0px 50px; }
+      .footer div div a {
+        margin: 0 10px; }
   @media screen and (max-width: 768px) {
     .footer {
       font-size: 1.25rem; } }
 
 .footerImg {
-  width: 100px; }
+  width: 100px;
+  margin: 10px 0; }
 
 .mainSection {
   display: flex;
@@ -171,6 +178,12 @@ html {
       display: flex;
       flex-direction: column;
       align-items: center; } }
+
+.carousel-inner {
+  background-color: #d4d4d4; }
+
+.d-block {
+  margin: 0  auto !important; }
 
 /*form contacto*/
 .formulario {

@@ -5,8 +5,13 @@
     display: flex;
     justify-content: center;
     div {
+        display: flex;
+        flex-direction: column;
         text-align: center;
         text-decoration: none;
+        p {
+            margin-bottom: 5px;
+        }
         a {
             text-decoration: none;
             color: white;
@@ -14,11 +19,12 @@
                 color: red;
             }
         }
-        p {
+        div {
             display: flex;
+            flex-direction: row ;
             justify-content: center;
             a {
-                margin: 20px 50px 0px 50px;
+                margin: 0 10px;
             }
         }
     }
@@ -29,4 +35,5 @@
 
 .footerImg {
     width: 100px;
+    margin: 10px 0;
 }

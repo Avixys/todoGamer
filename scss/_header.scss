@@ -1,10 +1,16 @@
 .header {
     background-color: black;
-}
-
-.headerNav {
-    display: flex;
-    justify-content: center;
+    nav {
+        div {
+            div {
+                display: flex;
+                justify-content: flex-end;
+                ul {
+                    margin-right: 0 !important;
+                }
+            }
+        }
+    }
 }
 
 .nav-link {
@@ -21,5 +27,5 @@
 }
 
 .headerImg {
-    width: 200px;
+    width: 250px;
 }
