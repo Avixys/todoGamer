@@ -6,7 +6,7 @@
 @import "consolaspc";
 
 $estiloForm: (
-    color: rgb(212, 212, 212),
+    color: rgba(0, 0, 0, 0.8),
     ancho: 400px,
     tamañoFuente: 1.5rem,
     borderRadius: 3px
@@ -23,7 +23,7 @@ $estiloForm: (
 /*form contacto*/
 .formulario {
     margin-bottom: 50px;
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
 }
 .contactoForm {
@@ -35,6 +35,7 @@ $estiloForm: (
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: white;
     div {
         display: flex;
         flex-direction: column;
